@@ -1,0 +1,522 @@
+/*
+Theme Name: Meghan Fagan Designs - Blog
+Author: Meghan Fagan
+Description: Blog for portfolio website
+Version: 1
+Tags: portfolio, blog, wordpress, bootstrap
+*/
+
+/* Scss Document */
+/* Imports */
+/* Scss Document */
+/* Colors */
+/* Headings */
+h1,
+h2,
+h3,
+h4 {
+  color: #d9526b;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+.specialh1 {
+  color: #E0E0E0;
+}
+
+.projecth1 {
+  margin-top: 2.3em;
+}
+
+.projecth2 {
+  font-size: 2.5em;
+  border-bottom: 0.2em solid #0378A6;
+}
+
+.specialh2 {
+  color: #0378A6;
+}
+
+.specialh3 {
+  color: #d9526b;
+}
+
+.projectintroh4 {
+  border-bottom: 0.15em solid #0378A6;
+  margin-bottom: .3em;
+}
+
+h5,
+h6 {
+  color: #0F0F0F;
+}
+
+/* Fonts */
+body {
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1600px;
+  background-color: #E0E0E0;
+  color: #0F0F0F;
+}
+
+.copyright {
+  color: #E0E0E0;
+  opacity: .5;
+}
+
+/* Buttons */
+.btn, #submit {
+  background-color: #d9526b !important;
+  color: #FFF;
+  -webkit-box-shadow: 2px 2px 2px rgba(15, 15, 15, 0.41);
+  -moz-box-shadow: 2px 2px 2px rgba(15, 15, 15, 0.41);
+  box-shadow: 2px 2px 2px rgba(15, 15, 15, 0.41);
+  border: none;
+}
+
+.btn:hover, #submit:hover {
+  background-color: #E0E0E0 !important;
+  color: #0F0F0F;
+}
+
+.btn:active, #submit:active {
+  background-color: #0F0F0F !important;
+  color: #E0E0E0 !important;
+}
+
+#submit {
+	padding: .5em;
+	border-radius:.3em;
+	transition: color .15s, background-color .15s ease-in-out;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Links */
+.blog-h1 a:link  {
+	color: #d9526b;
+	text-decoration: none;
+}
+
+.blog-h1 a:visited  {
+	color: #d9526b;
+	text-decoration: none;
+}
+
+.blog-h1 a:hover  {
+	color: #0378A6;
+	text-decoration: none;
+}
+
+.blog-h1 a:active  {
+	color: #0F0F0F;
+	text-decoration: none;
+}
+
+a {
+  color: #0378A6;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #05aadd;
+}
+
+a:active {
+  color: #0F0F0F;
+}
+
+a.btn {
+  text-decoration: none;
+}
+
+.navbar a {
+  font-size: 1.2em;
+  margin-left: 1rem;
+}
+
+.navbar-dark a {
+  color: #E0E0E0 !important;
+  text-decoration: none;
+}
+
+.navbar-dark a:hover {
+  color: #0378A6 !important;
+  text-decoration: none;
+}
+
+.navbar-dark a:active {
+  color: #0F0F0F !important;
+}
+
+a.nav-link.active {
+  border-bottom: 0.2em solid #d9526b;
+}
+
+/* Navbar Styles */
+.navbar-brand, .footerlogo {
+  max-width: 120px;
+}
+
+.navbar {
+  background-color: #01374C;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(224,224,224, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #E0E0E0;
+}
+
+.custom-toggler .navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(217,82,107, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler:hover {
+  border-color: #d9526b;
+}
+
+.portfolionav li a {
+  border-bottom: none !important;
+  text-decoration: none;
+  color: #0378A6;
+  font-size: 1.3em;
+}
+
+.portfolionav li a.active {
+  background-color: #d9526b !important;
+  color: #E0E0E0;
+  text-decoration: none;
+}
+
+.portfolio-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-header {
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+
+.thankslogo {
+  float: none;
+}
+
+/* Jumbotron Styles */
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #0378A6;
+  background-image: url("images/blog-header-image.png");
+  background-size: cover;
+  margin-top: 3em;
+}
+
+.jumbotron p {
+  color: #FFF;
+  font-size: 2em;
+  margin-top: 1.1em;
+  text-shadow: 2px 2px 1px #0F0F0F;
+}
+
+/* Line Breaks */
+.horizontallinebreak {
+  margin-bottom: 2rem;
+}
+
+.hborderbottom {
+  border-bottom: 0.25em solid #0378A6;
+  margin-bottom: .5rem;
+}
+
+/* Blog Styles */
+.blog-jumbotron-text {
+  font-size: 2.5em !important;
+}
+
+.blog-post-bg {
+  margin-top: 0em;
+}
+
+.blog-sidebar-bg {
+  background-color: #E8E8E8;
+}
+
+.blog-h1 {
+  font-size: 3em;
+}
+
+.blog-h2 {
+  color: #0378A6;
+  margin-bottom: 1em;
+  font-size: 1em;
+}
+
+.blog-h3 {
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.pagination {
+	background-color: black
+	display: inline-block;
+}
+
+.pagination a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    background-color: #d9526b;;
+    border-radius: .2em;
+    padding: .5em;
+    transition: color .15s, background-color .15s ease-in-out;
+} 
+
+.pagination a:hover {
+	color: #0F0F0F;
+	background-color: #E0E0E0;
+}
+
+.pagination a:active {
+	color: #E0E0E0;
+	background-color: #0F0F0F;
+}
+
+.comments-title a {
+	text-decoration: none !important;
+}
+
+h3.comments-title {
+	text-decoration: none !important;
+}
+
+.comment-list {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.comment-list a {
+	text-decoration: none;
+}
+
+.comment-list p {
+	margin-bottom: .5em;
+}
+
+.reply {
+	margin-bottom: 2em;
+}
+
+.comment-form-comment label {
+	display:block;
+	margin-bottom: 0;
+	color: #0378A6;
+	font-size: 1.5em;
+}
+
+#comments a {
+	text-decoration: none;
+}
+
+.sfsi_Sicons {
+	margin-bottom: 2em;
+}
+
+/* Portfolio Styles */
+.portfoliocontent {
+  margin-top: 3rem;
+}
+
+/* About Styles */
+.aboutpicture {
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.aboutlist ul, .materialsusedlist ul, {
+  list-style-image: url("../images/bullet.jpg");
+  display: inline-block;
+  text-align: left;
+  margin-top: 2em;
+}
+
+.recentposts ul, .categories ul, .connect ul {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0;
+}
+
+
+
+/* Contact Styles */
+.contactbackground {
+  background-color: #0378A6;
+}
+
+label {
+  font-size: 1.75rem;
+  color: #E0E0E0;
+  font-weight: 900;
+}
+
+.required, .requiredtext {
+  color: #ff9999;
+}
+
+.requiredtext {
+  font-size: 1.1em;
+}
+
+/* CAPTCHA styles */
+.capbox {
+  background-color: none;
+}
+
+.capbox-inner {
+  color: #E0E0E0;
+  margin-top: 5px;
+  padding: 0 3px;
+}
+
+#CaptchaDiv {
+  font: bold 1.5em verdana, arial, sans-serif;
+  font-style: italic;
+  color: #000000;
+}
+
+#CaptchaInput {
+  width: 135px;
+}
+
+/* Thanks Page Styles */
+.thanksheading {
+  margin-top: 6rem;
+  font-size: 2.3em;
+}
+
+/* Project Page Styles */
+.introbackground {
+  background-color: rgba(1, 55, 76, 0.2);
+  border-radius: .5em;
+}
+
+.materialsusedlist ul {
+  margin-top: .1em;
+}
+
+/* Footer Styles */
+footer {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  background-color: #01374C;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+/* Misc Styles */
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+.specialtext {
+  color: #01374C;
+  text-shadow: none;
+}
+
+.specialtext2 {
+  font-size: 2em;
+  color: #0378A6;
+  font-weight: 900;
+}
+
+.specialtext3 {
+  color: #d9526b;
+  font-weight: 900;
+}
+
+.anchor {
+  display: block;
+  height: 50px;
+  margin-top: -50px;
+  visibility: hidden;
+}
+
+/* Back to Top Button */
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #d9526b;
+  /* Set a background color */
+  color: #FFF;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #E0E0E0;
+  color: #0F0F0F;
+}
+
+#myBtn:active {
+  background-color: #0F0F0F;
+  color: #E0E0E0;
+}
+
+/* Skip to Main Content Link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  z-index: 9999;
+  right: 100%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: #000;
+  background: #FFF;
+}
+
+.skip-link:focus {
+  right: auto;
+  top: 53px;
+}
+
+/* Media Queries */
